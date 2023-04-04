@@ -1,0 +1,74 @@
+
+<form [formGroup]="paymentformGroup"  >
+    <!-- <mat-grid-list cols="1" > -->
+        <!-- <mat-grid-tile> -->
+            <!-- <div  class="control-container"> -->
+                <!-- <input type="hidden" formControlName="$key"/> -->
+                <!-- <mat-form-field class="formControl">
+                    <mat-label>Enter your email</mat-label>
+                    <input type="text" matInput
+                        placeholder="email"
+                        name="email" 
+                        id="email"
+                        [(ngModel)]="user.email" 
+                        #email="ngModel" required
+                        email>
+                    <mat-error *ngIf="email.invalid && (email.dirty || email.touched) && email.errors?.['required']">
+                        Email is <strong>required</strong>.
+                    </mat-error>
+                    <mat-error *ngIf="email.touched && email.errors?.['email']">
+                        Email entered is an <strong>invalid </strong>email address.
+                    </mat-error>
+                </mat-form-field>
+             -->
+                <mat-form-field appearance="outline">
+                    <mat-label>Enter your email</mat-label>
+                    <input  type="text" formControlName="cardNumber" matInput placeholder="Card Number"/>
+                </mat-form-field>
+                <br>
+                <mat-form-field  appearance="outline">
+                    <mat-label>Enter your email</mat-label>
+                    <input formControlName="cardHolder" matInput placeholder="Card Holder"/>
+                </mat-form-field>
+                <br>
+                <mat-form-field  appearance="outline">
+                    <mat-label>Enter your email</mat-label>
+                    <input formControlName="expireMonth" matInput placeholder="Expire Month"/>
+                </mat-form-field>
+                <br>
+                <!-- <div  class="control-container"> -->
+                    <mat-form-field  appearance="outline">
+                        <mat-label>Enter your email</mat-label>
+                        <input formControlName="expireYear" matInput placeholder="Expire Year"/>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field  appearance="outline">
+                        <mat-label>Enter your email</mat-label>
+                        <input formControlName="amount" matInput placeholder="Amount"/>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field  appearance="outline">
+                        <mat-label>Enter your email</mat-label>
+                        <input formControlName="cvv" matInput placeholder="cvv"/>
+                    </mat-form-field>
+                <!-- </div>
+               
+            </div>
+             -->
+            
+    
+        <!-- </mat-grid-tile>
+        <mat-grid-tile>
+            
+        </mat-grid-tile> -->
+    <!-- </mat-grid-list> -->
+    </form>
+    
+    
+    <!-- $key: new FormControl(null),
+    cardNumber : new FormControl(''),
+    cardHolder: new FormControl(''),
+    expireMonth: new FormControl(''),
+    expireYear: new FormControl(''),
+    amount: new FormControl(''),
+    cvv: new FormControl(''), -->

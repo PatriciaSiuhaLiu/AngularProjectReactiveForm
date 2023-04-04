@@ -1,0 +1,46 @@
+<div>
+  <mat-toolbar class="container" color="primary">
+    <span class="center"> ANGULAR PROJECT </span>
+    <div class="navlinks">
+    
+      <div class="margin1">
+        <a routerLink="/about" routerLinkActive="active" class="navlink"
+          >About</a
+        >
+      </div>
+      <div class="margin1">
+        <a
+          class="navlink"
+          aria-current="page"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </div>
+      <div class="margin1">
+        <a
+          class="navlink"
+          aria-current="page"
+          routerLink="/payment"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Payment</a
+        >
+      </div>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span> -->
+      <!-- <span class="example-spacer"></span> -->
+      <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button> -->

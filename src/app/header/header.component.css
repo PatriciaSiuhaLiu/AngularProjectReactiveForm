@@ -1,0 +1,31 @@
+/* .center{
+    margin: auto;
+} */
+
+.container{
+    justify-content: space-between;
+    }
+    .margin1{
+        margin:1rem
+    }
+    
+    .navlinks{
+        display: flex;
+        flex-direction: row;
+    }
+    .navlink{
+        display: flex;
+        flex-direction: row;
+    }
+/* 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; } */
+
+a { border-radius: 2rem;
+    padding: 0 10px;
+background-color: black; 
+color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

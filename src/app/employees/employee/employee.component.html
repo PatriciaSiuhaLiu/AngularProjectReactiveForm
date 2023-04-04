@@ -1,0 +1,79 @@
+
+
+    <form [formGroup]="paymentformGroup" class="paymentformGroup" (ngSubmit)="onFormSubmit()">
+
+        <input type="hidden" formControlName="$key"/>
+      
+            <div class="row">
+                <mat-form-field class="w100pct">
+                  
+                    <input formControlName="amount" matInput placeholder="Amount"/>
+                </mat-form-field>
+            </div>
+           
+    
+                <div class="row">
+                <mat-form-field class="w100pct">
+        
+                    <input  type="text" formControlName="cardNumber" matInput placeholder="Card Number"/>
+                </mat-form-field>
+                
+            </div>
+           
+    
+            <div class="row">
+         
+            <mat-form-field class="w100pct">
+          
+                <input formControlName="cardHolder" matInput placeholder="Card Holder"/>
+            </mat-form-field>
+        </div>
+           
+    
+        <!-- <div class="row">
+               
+            </div>
+            -->
+    
+            <div class="row">
+
+                <mat-form-field class="w30pct">
+                    <mat-select formControlName="expireMonth" matInput placeholder="Expire Month">
+                     <ng-container *ngFor="let item of mnthList">
+                         <mat-option value="{{item}}">{{item}}</mat-option>
+                     </ng-container>
+                     </mat-select>
+                     </mat-form-field>
+                <mat-form-field class="w30pct">
+               <mat-select formControlName="expireYear" matInput placeholder="Expire Year">
+                <ng-container *ngFor="let item of yearList">
+                    <mat-option value="{{item}}">{{item}}</mat-option>
+                </ng-container>
+                </mat-select>
+                </mat-form-field>
+                
+            </div>
+           
+    
+            <div class="row">
+                
+                <mat-form-field class="w30pct">
+                 
+                    <input formControlName="cvv" matInput placeholder="cvv" type="password"/>
+                </mat-form-field>
+    
+            </div>
+
+            <div class="row">
+                
+              <button mat-raised-button color="primary" type="submit">Pay</button>
+    
+            </div>
+           
+    
+    </form>
+    
+
+
+
+
